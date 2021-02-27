@@ -35,7 +35,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <> 
       <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
       <SafeAreaView style={styles.container}>
        <FlatList
@@ -45,15 +45,16 @@ export default function App() {
           <View style={styles.repositoryContainer}>
           <Text style={styles.repository}>{repository.title}</Text>
 
-          <View style={styles.techsContainer}>
-            {repository.techs.map(tech =>(
+              
+         {/*<View style={styles.techsContainer}>
+            {repository.techs.map(tech =>( 
                <Text key={tech} style={styles.tech}>
                {tech}
              </Text>
-            ))}
-           
-          </View>
-
+            ))}           
+          </View >
+            */ }
+            
           <View style={styles.likesContainer}>
             <Text
               style={styles.likeText}
@@ -78,6 +79,7 @@ export default function App() {
       </SafeAreaView>
     </>
   );
+ 
 }
 
 const styles = StyleSheet.create({
